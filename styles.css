@@ -9,6 +9,15 @@ body{
 
 fieldset{
     margin-top: 10pt;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 1em;
-    width: 1000px;
+    width: 500px;
+}
+
+#submit{
+    margin-top: 10px;
+    -webkit-transform: translatex(100%);
+    -ms-transform: translatex(100%);
+    transform: translatex(1250%);
 }

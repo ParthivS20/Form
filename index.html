@@ -7,14 +7,14 @@
         <link rel="stylesheet" href="styles.css" type="text/css">
     </head>
     <body>
-        <h1><u><b>Esthetics Client Consultation Form</b></u></h1>
-        <h3>Be assured that all information given in this form will be held in confidence</h3>
-        <form name="Esthetic Client Form" method="POST" data-netlify="true" action="/success.html">
-            <fieldset style="width: 350px;">
+        <h1 style="text-align: center;"><u><b>Esthetics Client Consultation Form</b></u></h1>
+        <h3 style="text-align: center;">Be assured that all information given in this form will be held in confidence</h3>
+        <form name="Esthetic Client Form" method="POST" data-netlify="true" action="/success.html" style="justify-content: center; align-items: center; margin:auto;">
+            <fieldset>
                 <input type="text" name="First Name:" placeholder="First Name" style="margin-bottom: 10px; margin-right: 10px;" required>
                 <input type="text" name="Last Name:" placeholder="Last Name" style="margin-bottom: 10px;" required><br>
-                <input type="tel" name="Phone Number:" placeholder="Phone Number" required>
-                <input type="email" name="Email:" placeholder="Email" style="margin-left: 10px;"><br>
+                <input type="tel" name="Phone Number:" placeholder="Phone Number" style="margin-right: 10px; margin-bottom: 10px;" required>
+                <input type="email" name="Email:" placeholder="Email"><br>
             </fieldset> 
             <fieldset>
                 <h2><b>Skin History:</b></h2>
@@ -100,10 +100,8 @@
                 <label style="margin-left: 20px;">Date:</label> 
                 <input type="date"  name="Date:" required>
             </fieldset>
-            <input type="text" name="Device Type:" id="type" hidden>
-            <p>
-              <button type="submit" onclick="getUA()">Submit</button>
-            </p>
+                <input type="text" name="Device Type:" id="type" hidden>
+                <button type="submit" id="submit" onclick="getUA()" style="left: 50%;">Submit</button>
           </form>
           <script type="text/javascript" src="script.js"></script>
     </body>
