@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>EForm</title>
+        <title>Esthetic Client Form</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css" type="text/css">
@@ -11,10 +11,10 @@
         <h3>Be assured that all information given in this form will be held in confidence</h3>
         <form name="contact" method="POST" data-netlify="true">
             <fieldset style="width: 350px;">
-                <input type="text" name="First Name" placeholder="First Name" style="margin-bottom: 10px;">
-                <input type="text" name="Last Name" placeholder="Last Name" style="margin-left: 10px ;margin-bottom: 10px;"><br>
-                <input type="tel" name="Phone" placeholder="Phone Number">
-                <input type="email" name="Email" placeholder="Email" style="margin-left: 10px;"><br>
+                <input type="text" name="First Name:" placeholder="First Name" style="margin-bottom: 10px;">
+                <input type="text" name="Last Name:" placeholder="Last Name" style="margin-left: 10px ;margin-bottom: 10px;"><br>
+                <input type="tel" name="Phone Number:" placeholder="Phone Number">
+                <input type="email" name="Email:" placeholder="Email" style="margin-left: 10px;"><br>
             </fieldset> 
             <fieldset>
                 <h2><b>Skin History:</b></h2>
@@ -22,72 +22,70 @@
                 <input type="radio" name="Facial Peels" value="Yes">Yes
                 <input type="radio" name="Facial Peels" value="No">No<br>
                 <p id="question">Have you had micro-dermabrasion?</p>
-                <input type="radio" name="Micro-Dermabrasion" value="Yes">Yes
-                <input type="radio" name="Micro-Dermabrasion" value="No">No<br>
+                <input type="radio" name="Have you had Micro-Dermabrasion:" value="Yes">Yes
+                <input type="radio" name="Have you had Micro-Dermabrasion:" value="No">No<br>
                 <p id="question">Do you use any products containing alpha-hydroxys?</p>
-                <input type="radio" name="Alpha-Hydroxys" value="Yes">Yes
-                <input type="radio" name="Alpha-Hydroxys" value="No">No<br>
+                <input type="radio" name="Do you use products with Alpha-Hydroxys:" value="Yes">Yes
+                <input type="radio" name="Do you use products with Alpha-Hydroxys:" value="No">No<br>
                 <p id="question">Do you use any products containing Accutane or Retin A?</p>
-                <input type="radio" name="Accutane or Retin A" value="Yes">Yes
-                <input type="radio" name="Accutane or Retin A" value="No">No<br>
+                <input type="radio" name="Do you use products with Accutane/Retin A:" value="Yes">Yes
+                <input type="radio" name="Do you use products with Accutane/Retin A:" value="No">No<br>
                 <p id="question">What is your primary goal for the service(s) you'll be having today?</p>
-                <input type="text"  name="Primary Goal" placeholder="Enter Here">
+                <input type="text"  name="Primary Goal for services:" placeholder="Enter Here">
                 <p id="question">Are you currently seeing a dermatologist?</p>
-                <input type="radio" name="Dermatologist" value="Yes">Yes
-                <input type="radio" name="Dermatologist" value="No">No<br>
+                <input type="radio" name="Are you seeing a dermatologist:" value="Yes">Yes
+                <input type="radio" name="Are you seeing a dermatologist:" value="No">No<br>
                 <p id="question">If yes, for what purpose?</p>
-                <input type="text"  name="Why" placeholder="Enter Here">
+                <input type="text"  name="If so, for what purpose:" placeholder="Enter Here">
                 <p id="question">Please rate your stress level?</p>
-                <input type="radio" name="Stress Level" value="High">High
-                <input type="radio" name="Stress Level" value="Somewhat High">Somewhat High
-                <input type="radio" name="Stress Level" value="Moderate">Moderate
-                <input type="radio" name="Stress Level" value="Low">Low<br>
+                <input type="radio" name="Stress Level Rating:" value="High">High
+                <input type="radio" name="Stress Level Rating:" value="Somewhat High">Somewhat High
+                <input type="radio" name="Stress Level Rating:" value="Moderate">Moderate
+                <input type="radio" name="Stress Level Rating:" value="Low">Low<br>
                 <p id="question">Do you wear contact lenses?</p>
-                <input type="radio" name="Contact Lenses" value="Yes">Yes
-                <input type="radio" name="Contact Lenses" value="No">No<br>
+                <input type="radio" name="Do you wear contact lenses:" value="Yes">Yes
+                <input type="radio" name="Do you wear contact lenses:" value="No">No<br>
                 <p id="question">Are you claustrophobic (feel sufocated)?</p>
-                <input type="radio" name="Claustrophobic" value="Yes">Yes
-                <input type="radio" name="Claustrophobic" value="No">No<br>
+                <input type="radio" name="Are you claustrophobic:" value="Yes">Yes
+                <input type="radio" name="Are you claustrophobic:" value="No">No<br>
                 <p id="question">Please mark the products that you use daily</p>
-                <input type="checkbox" id="D1">Cleanser<br>
-                <input type="checkbox" id="D2">Soap<br>
-                <input type="checkbox" id="D3">Mask<br>
-                <input type="checkbox" id="D4" >Exfoliant<br>
-                <input type="checkbox" id="D5">Toner<br>
-                <input type="checkbox" id="D6">Moisturizer Day/Night<br>
-                <input type="checkbox" id="D7">Eye Cream<br>
-                <input type="hidden" name="Daily Use" id="DU">
+                <input type="checkbox" name="Products used daily[]" value="Cleanser">Cleanser<br>
+                <input type="checkbox" name="Products used daily[]" value="Soap">Soap<br>
+                <input type="checkbox" name="Products used daily[]" value="Mask">Mask<br>
+                <input type="checkbox" name="Products used daily[]" value="Exfoliant">Exfoliant<br>
+                <input type="checkbox" name="Products used daily[]" value="Toner">Toner<br>
+                <input type="checkbox" name="Products used daily[]" value="Moisturizer Day/Night">Moisturizer Day/Night<br>
+                <input type="checkbox" name="Products used daily[]" value="Eye Cream">Eye Cream<br>
             </fieldset>
             <fieldset>
-                <p><i><u>Please mark an <b>X</b> next to conditions that you are concerned with</u></i></p>
-                <input type="checkbox" id="C1">Acne Breakouts<br>
-                <input type="checkbox" id="C2">Dryness<br>
-                <input type="checkbox" id="C3">Excessive Redness<br>
-                <input type="checkbox" id="C4">Tingling/ Burning<br>
-                <input type="checkbox" id="C5">Oiliness<br>
-                <input type="checkbox" id="C6">Flaking/ Peeling<br>
-                <input type="checkbox" id="C7">Under Eye Dark Circles<br>
-                <input type="checkbox" id="C8">Pigmentation<br>
-                <input type="checkbox" id="C9">Congestion<br>
-                <input type="checkbox" id="C10">Wrinkles or Fine Lines<br>
-                <input type="checkbox" id="C11">Puffy Eyes<br>
-                <input type="hidden" name="Concerned Conditions" id="CC">
+                <p><i><u>Please mark conditions that you are concerned with</u></i></p>
+                <input type="checkbox" name="Concerned Condidtions[]" value="Acne Breakouts">Acne Breakouts<br>
+                <input type="checkbox" name="Concerned Condidtions[]" value="Dryness">Dryness<br>
+                <input type="checkbox" name="Concerned Condidtions[]" value="Excessive Redness">Excessive Redness<br>
+                <input type="checkbox" name="Concerned Condidtions[]" value="Tingling/Burning">Tingling/Burning<br>
+                <input type="checkbox" name="Concerned Condidtions[]" value="Oiliness">Oiliness<br>
+                <input type="checkbox" name="Concerned Condidtions[]" value="Flaking/Peeling">Flaking/Peeling<br>
+                <input type="checkbox" name="Concerned Condidtions[]" value="Under Eye Dark Cirlces">Under Eye Dark Circles<br>
+                <input type="checkbox" name="Concerned Condidtions[]" value="Pigmentation">Pigmentation<br>
+                <input type="checkbox" name="Concerned Condidtions[]" value="Congestion">Congestion<br>
+                <input type="checkbox" name="Concerned Condidtions[]" value="Wrinkles/Fine Lines">Wrinkles or Fine Lines<br>
+                <input type="checkbox" name="Concerned Condidtions[]" value="Puffy Eyes">Puffy Eyes<br>
             </fieldset>
             <fieldset>
                 <h2><b>Medical History:</b></h2>
                 <p id="question">Are you pregnant or nursing?</p>
-                <input type="radio" name="Pregnant/Nursing" value="Yes">Yes
-                <input type="radio" name="Pregnant/Nursing" value="No">No<br>
+                <input type="radio" name="Are you pregnant/nursing:" value="Yes">Yes
+                <input type="radio" name="Are you pregnant/nursing:" value="No">No<br>
                 <p id="question">Please list any known allergies or skin irritants</p>
-                <input type="text"  name="Allergies/Irritants" placeholder="Enter Here">
+                <input type="text"  name="Allergies/Irritants:" placeholder="Enter Here">
                 <p id="question">Please indicate any medications you are currently taking (inculding topical or oral)</p>
-                <input type="text"  name="Medications" placeholder="Enter Here">
+                <input type="text"  name="Medications:" placeholder="Enter Here">
                 <p id="question">Are you experiencing any neck, shoulder, or wrist pain?</p>
-                <input type="radio" name="Pain" value="Yes">Yes
-                <input type="radio" name="Pain" value="No">No<br>
+                <input type="radio" name="Are you experiencing any pain:" value="Yes">Yes
+                <input type="radio" name="Are you experiencing any pain:" value="No">No<br>
                 <p id="question">Do you have a pacemaker or any metals in your body?</p>
-                <input type="radio" name="Pacemaker/Metals" value="Yes">Yes
-                <input type="radio" name="Pacemaker/Metals" value="No">No<br>
+                <input type="radio" name="Pacemaker/Metals:" value="Yes">Yes
+                <input type="radio" name="Pacemaker/Metals:" value="No">No<br>
             </fieldset>
             <fieldset>
                 <p style="font-size:meidum;">Because an Esthtician must be aware of exisiting medical conditions, allergies, or skin irritations, 
@@ -101,14 +99,9 @@
                 <input type="date"  name="Signature Date">
             </fieldset>
             <p>
-              <button type="submit">Send</button>
+              <button type="submit">Submit</button>
             </p>
           </form>
         <script src="main.js" type="text/javascript"></script>
     </body>
 </html>
-<script src="C:\Users\parth.PARTHIV\package.json" type="text/javascript"></script>
-<script>
-        var uuid = new DeviceUUID().get();
-        document.getElementById("ID").value=uuid;
-</script>
