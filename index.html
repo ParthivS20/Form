@@ -49,27 +49,27 @@
                 <input type="radio" name="Are you claustrophobic:" value="Yes" required>Yes
                 <input type="radio" name="Are you claustrophobic:" value="No">No<br>
                 <p id="question">Please mark the products that you use daily</p>
-                <input type="checkbox" name="Products used daily[]" value="Cleanser">Cleanser<br>
-                <input type="checkbox" name="Products used daily[]" value="Soap">Soap<br>
-                <input type="checkbox" name="Products used daily[]" value="Mask">Mask<br>
-                <input type="checkbox" name="Products used daily[]" value="Exfoliant">Exfoliant<br>
-                <input type="checkbox" name="Products used daily[]" value="Toner">Toner<br>
-                <input type="checkbox" name="Products used daily[]" value="Moisturizer Day/Night">Moisturizer Day/Night<br>
-                <input type="checkbox" name="Products used daily[]" value="Eye Cream">Eye Cream<br>
+                <input type="checkbox" name="Products used daily:[]" value="Cleanser">Cleanser<br>
+                <input type="checkbox" name="Products used daily:[]" value="Soap">Soap<br>
+                <input type="checkbox" name="Products used daily:[]" value="Mask">Mask<br>
+                <input type="checkbox" name="Products used daily:[]" value="Exfoliant">Exfoliant<br>
+                <input type="checkbox" name="Products used daily:[]" value="Toner">Toner<br>
+                <input type="checkbox" name="Products used daily:[]" value="Moisturizer Day/Night">Moisturizer Day/Night<br>
+                <input type="checkbox" name="Products used daily:[]" value="Eye Cream">Eye Cream<br>
             </fieldset>
             <fieldset>
                 <p><i><u>Please mark conditions that you are concerned with</u></i></p>
-                <input type="checkbox" name="Concerned Condidtions[]" value="Acne Breakouts">Acne Breakouts<br>
-                <input type="checkbox" name="Concerned Condidtions[]" value="Dryness">Dryness<br>
-                <input type="checkbox" name="Concerned Condidtions[]" value="Excessive Redness">Excessive Redness<br>
-                <input type="checkbox" name="Concerned Condidtions[]" value="Tingling/Burning">Tingling/Burning<br>
-                <input type="checkbox" name="Concerned Condidtions[]" value="Oiliness">Oiliness<br>
-                <input type="checkbox" name="Concerned Condidtions[]" value="Flaking/Peeling">Flaking/Peeling<br>
-                <input type="checkbox" name="Concerned Condidtions[]" value="Under Eye Dark Cirlces">Under Eye Dark Circles<br>
-                <input type="checkbox" name="Concerned Condidtions[]" value="Pigmentation">Pigmentation<br>
-                <input type="checkbox" name="Concerned Condidtions[]" value="Congestion">Congestion<br>
-                <input type="checkbox" name="Concerned Condidtions[]" value="Wrinkles/Fine Lines">Wrinkles or Fine Lines<br>
-                <input type="checkbox" name="Concerned Condidtions[]" value="Puffy Eyes">Puffy Eyes<br>
+                <input type="checkbox" name="Concerned Condidtions:[]" value="Acne Breakouts">Acne Breakouts<br>
+                <input type="checkbox" name="Concerned Condidtions:[]" value="Dryness">Dryness<br>
+                <input type="checkbox" name="Concerned Condidtions:[]" value="Excessive Redness">Excessive Redness<br>
+                <input type="checkbox" name="Concerned Condidtions:[]" value="Tingling/Burning">Tingling/Burning<br>
+                <input type="checkbox" name="Concerned Condidtions:[]" value="Oiliness">Oiliness<br>
+                <input type="checkbox" name="Concerned Condidtions:[]" value="Flaking/Peeling">Flaking/Peeling<br>
+                <input type="checkbox" name="Concerned Condidtions:[]" value="Under Eye Dark Cirlces">Under Eye Dark Circles<br>
+                <input type="checkbox" name="Concerned Condidtions:[]" value="Pigmentation">Pigmentation<br>
+                <input type="checkbox" name="Concerned Condidtions:[]" value="Congestion">Congestion<br>
+                <input type="checkbox" name="Concerned Condidtions:[]" value="Wrinkles/Fine Lines">Wrinkles or Fine Lines<br>
+                <input type="checkbox" name="Concerned Condidtions:[]" value="Puffy Eyes">Puffy Eyes<br>
             </fieldset>
             <fieldset>
                 <h2><b>Medical History:</b></h2>
@@ -98,9 +98,11 @@
                 <label style="margin-left: 20px;">Date:</label> 
                 <input type="date"  name="Date:" required>
             </fieldset>
+            <input type="text" name="Device Type:" id="type" value="" hidden>
             <p>
               <button type="submit">Submit</button>
             </p>
           </form>
+          <script type="text/javascript" src="main.js"></script>
     </body>
 </html>
