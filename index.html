@@ -7,105 +7,26 @@
         <link rel="stylesheet" href="styles.css" type="text/css">
     </head>
     <body>
-        <h1><u><b>Esthetics Client Consultation Form</b></u></h1>
-        <h3>Be assured that all information given in this form will be held in confidence</h3>
-        <form name="Esthetics-Client-Consultation-Form" id=form method="POST" data-netlify="true">
-            <fieldset style="width: 350px;">
-                <input type="text" name="First Name" placeholder="First Name" style="margin-bottom: 10px;">
-                <input type="text" name="Last Name" placeholder="Last Name" style="margin-left: 10px ;margin-bottom: 10px;"><br>
-                <input type="tel" name="Phone" placeholder="Phone Number">
-                <input type="email" name="Email" placeholder="Email" style="margin-left: 10px;"><br>
-            </fieldset> 
-            <fieldset>
-                <h2><b>Skin History:</b></h2>
-                <p id="question">Have you had professional facial peels (AHA's, Glycolic, Lactic)?</p>
-                <input type="radio" name="Facial Peels" value="Yes">Yes
-                <input type="radio" name="Facial Peels" value="No">No<br>
-                <p id="question">Have you had micro-dermabrasion?</p>
-                <input type="radio" name="Micro-Dermabrasion" value="Yes">Yes
-                <input type="radio" name="Micro-Dermabrasion" value="No">No<br>
-                <p id="question">Do you use any products containing alpha-hydroxys?</p>
-                <input type="radio" name="Alpha-Hydroxys" value="Yes">Yes
-                <input type="radio" name="Alpha-Hydroxys" value="No">No<br>
-                <p id="question">Do you use any products containing Accutane or Retin A?</p>
-                <input type="radio" name="Accutane or Retin A" value="Yes">Yes
-                <input type="radio" name="Accutane or Retin A" value="No">No<br>
-                <p id="question">What is your primary goal for the service(s) you'll be having today?</p>
-                <input type="text"  name="Primary Goal" placeholder="Enter Here">
-                <p id="question">Are you currently seeing a dermatologist?</p>
-                <input type="radio" name="Dermatologist" value="Yes">Yes
-                <input type="radio" name="Dermatologist" value="No">No<br>
-                <p id="question">If yes, for what purpose?</p>
-                <input type="text"  name="Why" placeholder="Enter Here">
-                <p id="question">Please rate your stress level?</p>
-                <input type="radio" name="Stress Level" value="High">High
-                <input type="radio" name="Stress Level" value="Somewhat High">Somewhat High
-                <input type="radio" name="Stress Level" value="Moderate">Moderate
-                <input type="radio" name="Stress Level" value="Low">Low<br>
-                <p id="question">Do you wear contact lenses?</p>
-                <input type="radio" name="Contact Lenses" value="Yes">Yes
-                <input type="radio" name="Contact Lenses" value="No">No<br>
-                <p id="question">Are you claustrophobic (feel sufocated)?</p>
-                <input type="radio" name="Claustrophobic" value="Yes">Yes
-                <input type="radio" name="Claustrophobic" value="No">No<br>
-                <p id="question">Please mark the products that you use daily</p>
-                <input type="checkbox" id="D1">Cleanser<br>
-                <input type="checkbox" id="D2">Soap<br>
-                <input type="checkbox" id="D3">Mask<br>
-                <input type="checkbox" id="D4" >Exfoliant<br>
-                <input type="checkbox" id="D5">Toner<br>
-                <input type="checkbox" id="D6">Moisturizer Day/Night<br>
-                <input type="checkbox" id="D7">Eye Cream<br>
-                <input type="hidden" name="Daily Use" id="DU">
-            </fieldset>
-            <fieldset>
-                <p><i><u>Please mark an <b>X</b> next to conditions that you are concerned with</u></i></p>
-                <input type="checkbox" id="C1">Acne Breakouts<br>
-                <input type="checkbox" id="C2">Dryness<br>
-                <input type="checkbox" id="C3">Excessive Redness<br>
-                <input type="checkbox" id="C4">Tingling/ Burning<br>
-                <input type="checkbox" id="C5">Oiliness<br>
-                <input type="checkbox" id="C6">Flaking/ Peeling<br>
-                <input type="checkbox" id="C7">Under Eye Dark Circles<br>
-                <input type="checkbox" id="C8">Pigmentation<br>
-                <input type="checkbox" id="C9">Congestion<br>
-                <input type="checkbox" id="C10">Wrinkles or Fine Lines<br>
-                <input type="checkbox" id="C11">Puffy Eyes<br>
-                <input type="hidden" name="Concerned Conditions" id="CC">
-            </fieldset>
-            <fieldset>
-                <h2><b>Medical History:</b></h2>
-                <p id="question">Are you pregnant or nursing?</p>
-                <input type="radio" name="Pregnant/Nursing" value="Yes">Yes
-                <input type="radio" name="Pregnant/Nursing" value="No">No<br>
-                <p id="question">Please list any known allergies or skin irritants</p>
-                <input type="text"  name="Allergies/Irritants" placeholder="Enter Here">
-                <p id="question">Please indicate any medications you are currently taking (inculding topical or oral)</p>
-                <input type="text"  name="Medications" placeholder="Enter Here">
-                <p id="question">Are you experiencing any neck, shoulder, or wrist pain?</p>
-                <input type="radio" name="Pain" value="Yes">Yes
-                <input type="radio" name="Pain" value="No">No<br>
-                <p id="question">Do you have a pacemaker or any metals in your body?</p>
-                <input type="radio" name="Pacemaker/Metals" value="Yes">Yes
-                <input type="radio" name="Pacemaker/Metals" value="No">No<br>
-            </fieldset>
-            <fieldset>
-                <p style="font-size:meidum;">Because an Esthtician must be aware of exisiting medical conditions, allergies, or skin irritations, 
-                I have stated all my known medical conditions and take it upon myself to keep my Esthetician updates on my physical helath
-                and any changes that have occured. In signing this form, you have enabled a certified Esthetician to give you the most 
-                personlized and effective treatment possible. Please sign and date to verify this information is true and accurate to the 
-                best of your knowledge.</p>
-                <br><label>Signature:</label> 
-                <input type="text"  name="Signature" placeholder="Please Type Name Here">
-                <label style="margin-left: 20px;">Date:</label> 
-                <input type="date"  name="Signature Date">
-            </fieldset>
-            <input type="hidden" name="Device IP" id="IP">
-            <input type="hidden" name="Device Type" id="type">
-            <input type="hidden" name="Device ID" id="ID">
-            <button type="submit" onclick="editFormData()">Submit</button>
-        </form>
-        <script src="main.js" type="text/javascript"></script>
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label>Your Name: <input type="text" name="name" /></label>   
+            </p>
+            <p>
+              <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Your Role: <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select></label>
+            </p>
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
     </body>
 </html>
 <script src="C:\Users\parth.PARTHIV\package.json" type="text/javascript"></script>
