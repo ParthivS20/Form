@@ -9,7 +9,7 @@
     <body>
         <h1><u><b>Esthetics Client Consultation Form</b></u></h1>
         <h3>Be assured that all information given in this form will be held in confidence</h3>
-        <form name="contact" method="POST" data-netlify="true" action="/success.html">
+        <form name="Esthetic Client Form" method="POST" data-netlify="true" action="/success.html">
             <fieldset style="width: 350px;">
                 <input type="text" name="First Name:" placeholder="First Name" style="margin-bottom: 10px;" required>
                 <input type="text" name="Last Name:" placeholder="Last Name" style="margin-left: 10px ;margin-bottom: 10px;" required><br>
@@ -33,10 +33,12 @@
                 <p id="question">What is your primary goal for the service(s) you'll be having today?</p>
                 <input type="text"  name="Primary Goal for services:" placeholder="Enter Here" required>
                 <p id="question">Are you currently seeing a dermatologist?</p>
-                <input type="radio" name="Are you seeing a dermatologist:" value="Yes" required>Yes
-                <input type="radio" name="Are you seeing a dermatologist:" value="No">No<br>
+                <input type="radio" name="Are you seeing a dermatologist:" value="Yes" onclick="document.getElementById('purpose').setAttribute('disabled','true')" required>Yes
+                <input type="radio" name="Are you seeing a dermatologist:" value="No" onclick="
+                document.getElementById('purpose').removeAttribute('disabled');
+                document.getElementById('purpose').focus();">No<br>
                 <p id="question">If yes, for what purpose?</p>
-                <input type="text"  name="If so, for what purpose:" placeholder="Enter Here">
+                <input type="text"  id="purpose" name="If so, for what purpose:" placeholder="Enter Here" disabled="false">
                 <p id="question">Please rate your stress level?</p>
                 <input type="radio" name="Stress Level Rating:" value="High" required>High
                 <input type="radio" name="Stress Level Rating:" value="Somewhat High">Somewhat High
@@ -103,6 +105,6 @@
               <button type="submit" onclick="getUA()">Submit</button>
             </p>
           </form>
-          <script type="text/javascript" src="main.js"></script>
+          <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
