@@ -1,5 +1,4 @@
-    document.getElementById("type").value=getUA();
-    const getUA = () => {
+   function getUA() {
         let device = "Unknown";
         const ua = {
             "Generic Linux": /Linux/i,
@@ -17,7 +16,7 @@
             "Zebra": /TC70|TC55/i,
         }
         Object.keys(ua).map(v => navigator.userAgent.match(ua[v]) && (device = v));
-        return device;
+        document.getElementById("type").value=device;
     }
 
 
